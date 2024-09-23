@@ -1,5 +1,6 @@
 https://www.linuxbuzz.com/install-minikube-on-ubuntu/
 
+# Install Minikube
 ```
 aafak@aafak-virtual-machine:~/k8s_install$ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
