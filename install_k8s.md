@@ -1,12 +1,11 @@
 https://www.linuxbuzz.com/install-minikube-on-ubuntu/
 
+```
 aafak@aafak-virtual-machine:~/k8s_install$ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 89.3M  100 89.3M    0     0  8167k      0  0:00:11  0:00:11 --:--:-- 10.8M
 aafak@aafak-virtual-machine:~/k8s_install$
-
-
 aafak@aafak-virtual-machine:~/k8s_install$ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 [sudo] password for aafak:
 aafak@aafak-virtual-machine:~/k8s_install$
@@ -15,8 +14,9 @@ aafak@aafak-virtual-machine:~/k8s_install$ minikube version
 minikube version: v1.32.0
 commit: 8220a6eb95f0a4d75f7f2d7b14cef975f050512d
 aafak@aafak-virtual-machine:~/k8s_install$
-
-
+```
+# Install kubectl
+```
 aafak@aafak-virtual-machine:~/k8s_install$ curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -40,7 +40,9 @@ kustomizeVersion: v5.0.4-0.20230601165947-6ce0bf390ce3
 
 The connection to the server localhost:8080 was refused - did you specify the right host or port?
 aafak@aafak-virtual-machine:~/k8s_install$
-
+```
+# Start minikube
+```
 aafak@aafak-virtual-machine:~/k8s_install$ minikube start --driver=docker
 * minikube v1.32.0 on Ubuntu 22.04
 * Using the docker driver based on user configuration
@@ -211,5 +213,5 @@ update.go:85: cannot change mount namespace according to change mount (/var/lib/
 update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/gimp/2.0/help /usr/share/gimp/2.0/help none bind,ro 0 0): cannot open directory "/var/lib": permission denied
 update.go:85: cannot change mount namespace according to change mount (/var/lib/snapd/hostfs/usr/share/xubuntu-docs /usr/share/xubuntu-docs none bind,ro 0 0): cannot open directory "/var/lib": permission denied
 Gtk-Message: 12:19:39.527: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it.
-
+```
 
