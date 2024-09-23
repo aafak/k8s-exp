@@ -110,6 +110,9 @@ pod/nginx-web-5b757f798d-ftd98   1/1     Running   0          20s
 NAME                 TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 service/kubernetes   ClusterIP   10.96.0.1      <none>        443/TCP        21m
 service/nginx-web    NodePort    10.109.6.236   <none>        80:31755/TCP   9s
+```
+# Install Addons
+```
 aafak@aafak-virtual-machine:~/k8s_install$ minikube addons list
 |-----------------------------|----------|--------------|--------------------------------|
 |         ADDON NAME          | PROFILE  |    STATUS    |           MAINTAINER           |
@@ -176,15 +179,8 @@ You can view the list of minikube maintainers at: https://github.com/kubernetes/
   - Using image registry.k8s.io/ingress-nginx/controller:v1.9.4
 * Verifying ingress addon...
 
-
-
 * The 'ingress' addon is enabled
 aafak@aafak-virtual-machine:~/k8s_install$
-aafak@aafak-virtual-machine:~/k8s_install$
-aafak@aafak-virtual-machine:~/k8s_install$
-aafak@aafak-virtual-machine:~/k8s_install$
-
-
 
 aafak@aafak-virtual-machine:~/k8s_install$ minikube dashboard
 * Verifying dashboard health ...
